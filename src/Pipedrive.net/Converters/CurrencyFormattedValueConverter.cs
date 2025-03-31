@@ -16,7 +16,6 @@ namespace Pipedrive.Internal
         {
             var values = new Dictionary<string, string>();
 
-            Console.WriteLine(reader.TokenType);
             if (reader.TokenType == JsonToken.StartObject)
             {
                 var jObject = JObject.Load(reader);
